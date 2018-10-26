@@ -6,8 +6,7 @@ import java.sql.Statement;
 public class Crud {
 	public void criaBD() {
 		Connection conn = null;
-		Conexao conexao = new Conexao();
-		conn = conexao.abreConexo();
+		conn = Conexao.abreConexo();
 		Statement stmt = null;
 		try {
 			stmt = conn.createStatement();
@@ -23,8 +22,7 @@ public class Crud {
 
 	public void insert() {
 		Connection conn = null;
-		Conexao conexao = new Conexao();
-		conn = conexao.abreConexo();
+		conn = Conexao.abreConexo();
 		Statement stmt = null;
 		try {
 			stmt = conn.createStatement();
@@ -45,8 +43,7 @@ public class Crud {
 	
 	public void apagaBD() {
 		Connection conn = null;
-		Conexao conexao = new Conexao();
-		conn = conexao.abreConexo();
+		conn = Conexao.abreConexo();
 		Statement stmt = null;
 		try {
 			stmt = conn.createStatement();

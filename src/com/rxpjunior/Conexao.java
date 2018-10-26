@@ -10,7 +10,7 @@ public class Conexao {
 	// Database credentials
 	static final String USER = "sa";
 	static final String PASS = "";
-	public Connection abreConexo() {
+	public static Connection abreConexo() {
 		Connection conn = null;
 		try {
 			// STEP 1: Register JDBC driver
